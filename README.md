@@ -1,73 +1,166 @@
-# React + TypeScript + Vite
+🎯 Quiz Master – React + TypeScript Quiz Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-featured quiz platform built using React, TypeScript, Vite, Tailwind CSS, Radix UI, and Recharts.
 
-Currently, two official plugins are available:
+🌐 Live Demo
+👉 https://musmana.github.io/Quiz-Master/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+👤 User Module
 
-## React Compiler
+User Registration & Login (Mock)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Timed Quiz Attempt
 
-## Expanding the ESLint configuration
+Question Navigator
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Flag Questions for Review
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Quiz Result Page
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Leaderboard
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+User Profile Page
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Quiz History & Statistics
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🛠 Admin Module
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Admin Dashboard
+
+Question Management (Add / Edit / Delete)
+
+Quiz Management
+
+Category Management
+
+Analytics & Reports
+
+Drop-off Analysis
+
+User Performance Table
+
+🧰 Tech Stack
+
+⚛ React 18
+
+🔷 TypeScript
+
+⚡ Vite
+
+🎨 Tailwind CSS
+
+🧩 Radix UI
+
+📊 Recharts
+
+🧠 React Router DOM
+
+🧱 class-variance-authority (CVA)
+
+📁 Project Structure
+src/
+ ├── components/
+ │   ├── layout/
+ │   └── ui/
+ ├── pages/
+ │   ├── admin/
+ │   └── user/
+ ├── data/
+ ├── lib/
+ └── main.tsx
+
+🛠 Installation
+
+Clone the repository:
+
+git clone https://github.com/musmana/Quiz-Master.git
+cd Quiz-Master
+
+
+Install dependencies:
+
+npm install
+
+
+Run development server:
+
+npm run dev
+
+🏗 Build for Production
+npm run build
+
+
+Preview production build:
+
+npm run preview
+
+🌍 Deploy to GitHub Pages
+
+Make sure:
+
+vite.config.ts
+export default defineConfig({
+  base: "/Quiz-Master/",
+});
+
+main.tsx
+<BrowserRouter basename="/Quiz-Master">
+
+
+Then deploy:
+
+npm run deploy
+
+📊 Reports & Analytics
+
+Area Chart – User Activity Trends
+
+Bar Chart – Drop-off Analysis
+
+Category Performance
+
+Most Attempted Quiz Tracking
+
+User Performance Metrics
+
+🔐 Authentication
+
+Currently uses mock authentication (frontend simulation).
+Can be integrated with:
+
+Firebase
+
+Supabase
+
+Node + Express
+
+JWT Authentication
+
+🧠 Future Improvements
+
+Backend Integration
+
+API-based Dynamic Data
+
+Role-based Route Protection
+
+Pagination
+
+PDF Export Reports
+
+Dark Mode
+
+Performance Optimization
+
+👨‍💻 Author
+
+Shiny Musmana J
+Senior Web Developer
+Tamil Nadu, India
+
+GitHub: https://github.com/musmana
+
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
